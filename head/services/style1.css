@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 .background {
-  background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
+  background: url("../pictures/пшеничное-поле-фото-4.jpg") center/cover;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -143,7 +143,6 @@ footer div {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-
 }
 
 footer img {

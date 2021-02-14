@@ -2,10 +2,10 @@ body {
   margin: 0;
 }
 .background {
-  background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
+  background: url("../pictures/пшеничное-поле-фото-4.jpg") center/cover;
   height: 100vh;
   width: 100vw;
-  margin: 0;
+  margin: 100px 0 0 0;
   display: inline-block;
   position: fixed;
   z-index: -1;
@@ -20,6 +20,7 @@ header {
   height: 100px;
   padding: 0;
   z-index: 1;
+  box-shadow:0 0 5px 2px ;
 }
 
 .log {
@@ -34,7 +35,7 @@ header {
 }
 
 .mobile {
-  width: calc(100% - 334px);
+  width: calc(100vw - 334px);
   text-align: right;
   display: inline-block;
   margin: 0;
@@ -59,12 +60,12 @@ header nav {
   display: inline-block;
   text-align: right;
   vertical-align: bottom;
-  width: calc(100% - 334px);
+  width: calc(100vw - 334px);
   margin: 5px 0;
   position: relative;
   height: calc(100% - 48px);
   float: right;
-}
+ }
 
 header ul {
   padding: 0;
@@ -143,7 +144,6 @@ footer div {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-
 }
 
 footer img {

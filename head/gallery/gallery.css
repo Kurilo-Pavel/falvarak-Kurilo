@@ -1,0 +1,25 @@
+section ul{
+  margin: 100px 0 0 0;
+ text-align: center;
+  }
+section li {
+  background: white;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  height: 20vw;
+  margin: 1vw;
+
+   }
+
+section img {
+  height: 20vw;
+  width: 30vw;
+  opacity: 0.8;
+  z-index: -1;
+  }
+
+section img:hover {
+  opacity: 1;
+  }
+

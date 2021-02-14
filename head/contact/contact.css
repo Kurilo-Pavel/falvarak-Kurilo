@@ -1,0 +1,61 @@
+.messenger {
+  list-style-type: none;
+  position: relative;
+  height: auto;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1em;
+  float: none;
+  overflow: hidden;
+}
+
+.messenger li {
+  display: inline-block;
+}
+
+.messenger img {
+  margin: 1vw;
+  height: 7vw;
+}
+
+.messenger img:hover {
+  box-shadow: 0 0 3px 5px white;
+  border-radius: 50%;
+}
+
+section {
+  margin: 100px 0 0 0;
+}
+
+section > img {
+  height: 30vw;
+  box-shadow: 0 0 10px 5px;
+  margin: 30px;
+  display: block;
+  float: left;
+}
+
+section p {
+  font-size: 2em;
+  width: 40vw;
+  font-weight: bold;
+  display: inline-block;
+  padding: 1em 1em 0 0;
+  margin: 0;
+}
+
+.tel {
+  margin: 0;
+  padding: 0;
+}
+
+.tel li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.tel img {
+  height: 3vw;
+  padding: 0 5px;
+}
