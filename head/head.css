@@ -1,21 +1,28 @@
-
-section{
-  margin: 100px 0 0 0;
-}
 section img {
-  height: 30vw;
-  position: fixed;
-  left: 5em;
-  top: 7em;
-  box-shadow: 0 0 10px 5px;
-  transform: rotate(-10deg);
-  z-index: 2;
+    position: relative;
+    float: left;
+    margin: 5px 40px 20px 5px;
+    left: 20px;
+    top: 20px;
+    height: 30vw;
+    box-shadow: 0 0 10px 5px;
+    transform: rotate(-10deg);
 }
 
 section p {
-  float: right;
-  width: 40vw;
-  font-style: italic;
-  font-size: 1.5vw;
-  display: block;
+    margin: 10px;
+    font-style: italic;
+    font-size: 20px;
+    z-index: 1;
 }
+
+p ~ p {
+    width: 100%;
+    text-align: right;
+}
+
+@media (max-width: 910px) {
+
+
+}
+

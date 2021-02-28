@@ -1,31 +1,8 @@
-.messenger {
-  list-style-type: none;
-  position: relative;
-  height: auto;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 1em;
-  float: none;
-  overflow: hidden;
-}
-
-.messenger li {
-  display: inline-block;
-}
-
-.messenger img {
-  margin: 1vw;
-  height: 7vw;
-}
-
-.messenger img:hover {
-  box-shadow: 0 0 3px 5px white;
-  border-radius: 50%;
-}
 
 section {
   margin: 100px 0 0 0;
+  overflow: hidden;
+
 }
 
 section > img {
@@ -43,6 +20,8 @@ section p {
   display: inline-block;
   padding: 1em 1em 0 0;
   margin: 0;
+  text-shadow: -4px 7px 8px rgba(16,8,46,0.61);
+
 }
 
 .tel {
@@ -53,9 +32,39 @@ section p {
 .tel li {
   list-style-type: none;
   display: inline-block;
-}
+  }
 
 .tel img {
   height: 3vw;
   padding: 0 5px;
+}
+
+.messenger {
+  list-style-type: none;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+
+}
+
+.messenger li {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 1vw;
+  border-radius: 50%;
+  overflow: hidden;
+
+
+}
+
+.messenger img {
+
+  height: 70px;
+}
+
+.messenger img:hover {
+  box-shadow: 0 0 3px 5px white;
+  border-radius: 50%;
+  transform: scale(1.2);
 }

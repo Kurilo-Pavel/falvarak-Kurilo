@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  var fistName = prompt('Введите ваше имя');
+  var lastName = prompt('Введите свою фамилию');
+  var patrynomic = prompt('Введите свое отчество');
+  var age = parseInt(prompt('Сколько вам полных лет?'));
+  var gender = confirm('Ваш пол - мужской?');
+  var pension;
+  var gender = (gender == true) ? 'мужской' : 'женский';
+  var pension = (gender != 'женский') ? ((age >= 65) ? 'да' : 'нет') : ((age >= 60) ? 'да' : 'нет');
+  var fullName = lastName + ' ' + fistName + ' ' + patrynomic;
+  var old = age + 5;
+  var dayAge = age * 365;
+  alert('Ваше ФИО: ' + fullName + '\nВаш возраст в годах: ' + age + '\nВаш возраст в днях: ' + dayAge + '\nЧерез пять лет вам будет: ' + old
+    + '\nВаш пол: ' + gender + '\nВы на пенсии: ' + pension);
+</script>
+</body>
+</html>

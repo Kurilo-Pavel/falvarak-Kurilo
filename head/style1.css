@@ -1,156 +1,341 @@
 body {
-  margin: 0;
-}
-.background {
-  background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  display: inline-block;
-  position: fixed;
-  z-index: -1;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: white;
-  width: 100%;
-  height: 100px;
-  padding: 0;
-  z-index: 1;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    background: white;
+    box-shadow: 0 0 3px 5px grey;
 }
 
 .log {
-  display: inline-block;
-  position: absolute;
-  height: 100px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 330px;
+
 }
 
 .log > a > img {
-  height: 100%;
-  background: white;
+    height: 100%;
+}
+
+.log :hover {
+    transform: scale(1.05);
 }
 
 .mobile {
-  width: calc(100% - 334px);
-  text-align: right;
-  display: inline-block;
-  margin: 0;
-  vertical-align: top;
-  position: relative;
-  float: right;
+    display: block;
+    margin: 0;
+    text-align: right;
+    width: 250px;
+    float: right;
 }
 
 .mobile img {
-  height: 30px;
+    height: 30px;
 }
 
 .mobile p {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-  float: right;
-  padding: 5px 20px;
+    padding: 5px 20px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
 }
 
-header nav {
-  display: inline-block;
-  text-align: right;
-  vertical-align: bottom;
-  width: calc(100% - 334px);
-  margin: 5px 0;
-  position: relative;
-  height: calc(100% - 48px);
-  float: right;
+nav {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: calc(100% - 334px);
+    height: calc(100% - 48px);
+    float: right;
+
 }
 
-header ul {
-  padding: 0;
-  margin: 0;
+.menu {
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+    vertical-align: bottom;
+    padding: 0;
 }
 
-header ul li {
-  display: inline-block;
-  list-style-type: none;
-  font-size: 30px;
-  padding: 8px 10px;
-  margin: 5px;
-  font-weight: bold;
-  border-radius: 10px;
-  background: white;
+.menu li {
+    display: inline-block;
+    padding: 8px 10px;
+    margin: 5px;
+    background: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    list-style-type: none;
 }
 
-header ul li:hover {
-  box-shadow: 0 0 15px 1px;
+.menu li:hover {
+    box-shadow: 0 0 15px 1px;
 }
 
-.uslugi li:hover {
-  box-shadow: none;
+.services li:hover {
+    box-shadow: none;
+    text-shadow: -5px 9px 5px rgba(173, 159, 56, 0.88);
 }
 
 li a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 ul.menu > li:hover > ul.submenu {
-  display: inherit;
+    display: inherit;
 }
 
-.uslugi {
-  width: 100px;
-  position: relative;
+.services {
+    width: 100px;
 }
-
+#submenu{
+    display: none;
+}
 .submenu {
-  position: relative;
-  display: none;
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  padding: 0;
-  background: white;
+    position: relative;
+    display: none;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    padding: 0;
+    background: white;
+
 }
 
-ul.submenu li {
-  font-size: 15px;
-  text-align: right;
-  display: block;
-  border: none;
+.submenu li {
+    display: block;
+    border: none;
+    font-size: 15px;
+    text-align: right;
 }
 
 .submenu a:hover {
-  color: black;
+    color: black;
+}
+
+section {
+    position: relative;
+    margin: 0;
+}
+
+section div {
+    position: fixed;
+    background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 footer {
-  display: inline-block;
-  bottom: 0;
-  background: black;
-  width: 100vw;
-  color: white;
-  text-align: center;
-  z-index: 4;
+    display: inline-block;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
 }
 
 footer div {
-  width: 30vw;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-
+    display: inline-block;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 footer img {
-  width: 30vw;
+    width: 30vw;
 }
 
 footer p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#burg_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+@media (max-width: 910px) {
+    header {
+        height: 140px;
+    }
+
+    nav {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        display: block;
+        height: auto;
+        margin: 75px 0 0 0;
+    }
+
+    .submenu_btn {
+        z-index: 5;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header {
+        width: 100vw;
+        height: auto;
+        display: block;
+        overflow: hidden;
+    }
+
+    .log {
+        width: 65vw;
+        height: 100px;
+        bottom: 0;
+    }
+
+    .log > a > img {
+        width: 60vw;
+    }
+
+    .mobile {
+        position: absolute;
+        width: 100vw;
+        text-align: right;
+        z-index: 2;
+    }
+
+    .burg {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        width: 80px;
+        height: auto;
+        margin: 3px;
+        cursor: pointer;
+        overflow: hidden;
+        right: 20px;
+    }
+
+    .menu_burg {
+        height: auto;
+        width: 100%;
+    }
+
+    .menu_burg span {
+        display: inline-block;
+        height: 1vw;
+        border: 1px solid black;
+        width: 90%;
+        border-radius: 5px;
+        background: black;
+        margin: 3px;
+    }
+
+
+    #burg_btn:checked ~ .menu_burg .burg_top {
+        transition: 1s;
+        transform: translateX(-100px)
+    }
+
+    #burg_btn:checked ~ .menu_burg .burg_bottom {
+        transition: 1s;
+        transform: translateX(-100px)
+    }
+
+    #burg_btn:checked ~ .menu_burg .burg_center {
+        transition: 1s;
+        transform: translateX(100px)
+    }
+
+    #burg_btn:checked {
+        opacity: 1;
+    }
+
+    nav {
+        position: relative;
+        display: block;
+        width: 100vw;
+        text-align: center;
+        margin: 0;
+        height: auto;
+    }
+
+    ul.menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    #burg_btn:checked ~ .menu {
+        display: block;
+        visibility: visible;
+    }
+
+    .menu {
+        position: relative;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .menu li:hover {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #submenu {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .submenu_btn {
+        cursor: pointer;
+    }
+
+    ul.submenu {
+        display: none;
+        visibility: hidden;
+    }
+
+    .submenu li {
+        text-align: left;
+    }
+
+    ul.menu > li:hover > ul.submenu {
+        display: none;
+    }
+
+    #submenu:checked ~ ul.submenu {
+        display: block;
+        visibility: visible;
+    }
+
+    footer {
+        display: flex;
+        align-items: flex-end;
+    }
 }
