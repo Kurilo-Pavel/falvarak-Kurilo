@@ -134,11 +134,11 @@ section {
 
 section div {
     position: fixed;
-    background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
     z-index: -1;
     height: 100%;
     width: 100%;
     margin: 0;
+    background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
 }
 
 footer {
@@ -185,11 +185,11 @@ footer p {
 
     nav {
         position: absolute;
-        width: 100%;
-        text-align: center;
         display: block;
+        width: 100%;
         height: auto;
         margin: 75px 0 0 0;
+        text-align: center;
     }
 
     .submenu_btn {
@@ -200,10 +200,10 @@ footer p {
 
 @media (max-width: 600px) {
     header {
-        width: 100vw;
-        height: auto;
         display: block;
         overflow: hidden;
+        width: 100vw;
+        height: auto;
     }
 
     .log {
@@ -218,21 +218,22 @@ footer p {
 
     .mobile {
         position: absolute;
+        z-index: 2;
         width: 100vw;
         text-align: right;
-        z-index: 2;
-    }
+            }
 
     .burg {
         display: inline-block;
         position: absolute;
+        right: 20px;
         top: 30px;
         width: 80px;
         height: auto;
         margin: 3px;
         cursor: pointer;
         overflow: hidden;
-        right: 20px;
+        text-align: center;
     }
 
     .menu_burg {
@@ -243,27 +244,26 @@ footer p {
     .menu_burg span {
         display: inline-block;
         height: 1vw;
-        border: 1px solid black;
         width: 90%;
+        border: 1px solid black;
+        margin: 3px;
         border-radius: 5px;
         background: black;
-        margin: 3px;
     }
-
 
     #burg_btn:checked ~ .menu_burg .burg_top {
         transition: 1s;
-        transform: translateX(-100px)
+        transform: translateX(-100px);
     }
 
     #burg_btn:checked ~ .menu_burg .burg_bottom {
         transition: 1s;
-        transform: translateX(-100px)
+        transform: translateX(-100px);
     }
 
     #burg_btn:checked ~ .menu_burg .burg_center {
         transition: 1s;
-        transform: translateX(100px)
+        transform: translateX(100px);
     }
 
     #burg_btn:checked {
@@ -274,9 +274,9 @@ footer p {
         position: relative;
         display: block;
         width: 100vw;
-        text-align: center;
-        margin: 0;
         height: auto;
+        margin: 0;
+        text-align: center;
     }
 
     ul.menu {
@@ -308,8 +308,8 @@ footer p {
     }
 
     #submenu {
-        opacity: 0;
         position: absolute;
+        opacity: 0;
     }
 
     .submenu_btn {
