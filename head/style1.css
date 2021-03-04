@@ -1,341 +1,328 @@
 body {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 header {
-    position: relative;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    padding: 0;
-    background: white;
-    box-shadow: 0 0 3px 5px grey;
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  background: white;
+  box-shadow: 0 0 3px 5px grey;
 }
 
 .log {
-    position: relative;
-    display: block;
-    float: left;
-    width: 330px;
-
+  position: relative;
+  display: block;
+  float: left;
+  width: 330px;
 }
 
 .log > a > img {
-    height: 100%;
+  height: 100%;
 }
 
 .log :hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.mobile {
-    display: block;
-    margin: 0;
-    text-align: right;
-    width: 250px;
-    float: right;
-}
-
-.mobile img {
-    height: 30px;
-}
-
-.mobile p {
-    padding: 5px 20px;
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-    float: right;
+.header__button {
+  float: right;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: none;
+  margin: 0.5em 1em;
 }
 
 nav {
-    position: relative;
-    display: block;
-    text-align: right;
-    width: calc(100% - 334px);
-    height: calc(100% - 48px);
-    float: right;
-
+  position: relative;
+  display: block;
+  text-align: right;
+  width: calc(100% - 334px);
+  height: calc(100% - 52px);
+  float: right;
 }
 
 .menu {
-    position: relative;
-    display: inline-block;
-    margin: 5px 0;
-    vertical-align: bottom;
-    padding: 0;
+  position: relative;
+  display: block;
+  margin: 0;
+  vertical-align: bottom;
+  padding: 0;
 }
 
 .menu li {
-    display: inline-block;
-    padding: 8px 10px;
-    margin: 5px;
-    background: white;
-    font-weight: bold;
-    font-size: 30px;
-    border-radius: 10px;
-    list-style-type: none;
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 5px;
+  background: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  list-style-type: none;
 }
 
 .menu li:hover {
-    box-shadow: 0 0 15px 1px;
+  box-shadow: 0 0 15px 1px;
 }
 
 .services li:hover {
-    box-shadow: none;
-    text-shadow: -5px 9px 5px rgba(173, 159, 56, 0.88);
+  box-shadow: none;
+  text-shadow: -5px 9px 5px rgba(173, 159, 56, 0.88);
 }
 
 li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 ul.menu > li:hover > ul.submenu {
-    display: inherit;
+  display: inherit;
 }
 
 .services {
-    width: 100px;
+  width: 70px;
 }
-#submenu{
-    display: none;
-}
-.submenu {
-    position: relative;
-    display: none;
-    overflow: hidden;
-    float: left;
-    width: 100%;
-    padding: 0;
-    background: white;
 
+#submenu {
+  display: none;
+  z-index: 5;
+}
+
+.submenu {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  padding: 0;
+  background: white;
 }
 
 .submenu li {
-    display: block;
-    border: none;
-    font-size: 15px;
-    text-align: right;
+  display: block;
+  box-sizing: border-box;
+
+  padding: 0.5em 0;
+  margin: 0;
+
+  border: none;
+  font-size: 0.7em;
+  text-align: left;
+  text-overflow: ellipsis;
+
 }
 
 .submenu a:hover {
-    color: black;
+  color: black;
 }
 
 section {
-    position: relative;
-    margin: 0;
+  position: relative;
+  margin: 0;
 }
 
 section div {
-    position: fixed;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
+  position: fixed;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: url("pictures/пшеничное-поле-фото-4.jpg") center/cover;
 }
 
 footer {
-    display: inline-block;
-    width: 100%;
-    background: black;
-    color: white;
-    text-align: center;
+  display: inline-block;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
 }
 
 footer div {
-    display: inline-block;
-    width: 30%;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-    text-align: center;
-    vertical-align: middle;
+  display: inline-block;
+  width: 30%;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 footer img {
-    width: 30vw;
+  width: 30vw;
 }
 
 footer p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #burg_btn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    padding: 0;
+  position: absolute;
+  opacity: 0;
+  padding: 0;
 }
 
 @media (max-width: 910px) {
-    header {
-        height: 140px;
-    }
+  header {
+    height: 120px;
+  }
 
-    nav {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: 75px 0 0 0;
-        text-align: center;
-    }
+  nav {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 75px 0 0 0;
+    text-align: center;
+  }
 
-    .submenu_btn {
-        z-index: 5;
-    }
+  .submenu_btn {;
+  }
 }
 
 
 @media (max-width: 600px) {
-    header {
-        display: block;
-        overflow: hidden;
-        width: 100vw;
-        height: auto;
-    }
+  header {
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+  }
 
-    .log {
-        width: 65vw;
-        height: 100px;
-        bottom: 0;
-    }
+  .log {
+    width: 65vw;
+    height: 100px;
+    bottom: 0;
+  }
 
-    .log > a > img {
-        width: 60vw;
-    }
+  .log > a > img {
+    width: 60vw;
+  }
 
-    .mobile {
-        position: absolute;
-        z-index: 2;
-        width: 100vw;
-        text-align: right;
-            }
+  .button {
+    float: none;
+  }
 
-    .burg {
-        display: inline-block;
-        position: absolute;
-        right: 20px;
-        top: 30px;
-        width: 80px;
-        height: auto;
-        margin: 3px;
-        cursor: pointer;
-        overflow: hidden;
-        text-align: center;
-    }
+  .burg {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 80px;
+    height: auto;
+    margin: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+  }
 
-    .menu_burg {
-        height: auto;
-        width: 100%;
-    }
+  .menu_burg {
+    height: auto;
+    width: 100%;
+  }
 
-    .menu_burg span {
-        display: inline-block;
-        height: 1vw;
-        width: 90%;
-        border: 1px solid black;
-        margin: 3px;
-        border-radius: 5px;
-        background: black;
-    }
+  .menu_burg span {
+    display: inline-block;
+    height: 1vw;
+    width: 90%;
+    border: 1px solid black;
+    margin: 3px;
+    border-radius: 5px;
+    background: black;
+  }
 
-    #burg_btn:checked ~ .menu_burg .burg_top {
-        transition: 1s;
-        transform: translateX(-100px);
-    }
+  #burg_btn:checked ~ .menu_burg .burg_top {
+    transition: 1s;
+    transform: translateX(-100px);
+  }
 
-    #burg_btn:checked ~ .menu_burg .burg_bottom {
-        transition: 1s;
-        transform: translateX(-100px);
-    }
+  #burg_btn:checked ~ .menu_burg .burg_bottom {
+    transition: 1s;
+    transform: translateX(-100px);
+  }
 
-    #burg_btn:checked ~ .menu_burg .burg_center {
-        transition: 1s;
-        transform: translateX(100px);
-    }
+  #burg_btn:checked ~ .menu_burg .burg_center {
+    transition: 1s;
+    transform: translateX(100px);
+  }
 
-    #burg_btn:checked {
-        opacity: 1;
-    }
+  #burg_btn:checked {
+    opacity: 1;
+  }
 
-    nav {
-        position: relative;
-        display: block;
-        width: 100vw;
-        height: auto;
-        margin: 0;
-        text-align: center;
-    }
+  nav {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    text-align: center;
+  }
 
-    ul.menu {
-        display: none;
-        visibility: hidden;
-    }
+  ul.menu {
+    display: none;
+    visibility: hidden;
+  }
 
-    #burg_btn:checked ~ .menu {
-        display: block;
-        visibility: visible;
-    }
+  #burg_btn:checked ~ .menu {
+    display: block;
+    visibility: visible;
+  }
 
-    .menu {
-        position: relative;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-    }
+  .menu {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
 
-    .menu li {
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-    }
+  .menu li {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
 
-    .menu li:hover {
-        border-radius: 0;
-        box-shadow: none;
-    }
+  .menu li:hover {
+    border-radius: 0;
+    box-shadow: none;
+  }
 
-    #submenu {
-        position: absolute;
-        opacity: 0;
-    }
+  #submenu {
+    position: absolute;
+    opacity: 0;
+  }
 
-    .submenu_btn {
-        cursor: pointer;
-    }
+  .submenu_btn {
+    cursor: pointer;
+  }
 
-    ul.submenu {
-        display: none;
-        visibility: hidden;
-    }
+  ul.submenu {
+    display: none;
+    visibility: hidden;
+  }
 
-    .submenu li {
-        text-align: left;
-    }
+  .submenu li {
+    text-align: left;
+  }
 
-    ul.menu > li:hover > ul.submenu {
-        display: none;
-    }
+  ul.menu > li:hover > ul.submenu {
+    display: none;
+  }
 
-    #submenu:checked ~ ul.submenu {
-        display: block;
-        visibility: visible;
-    }
+  #submenu:checked ~ ul.submenu {
+    display: block;
+    visibility: visible;
+  }
 
-    footer {
-        display: flex;
-        align-items: flex-end;
-    }
+  footer {
+    display: flex;
+    align-items: flex-end;
+  }
 }
