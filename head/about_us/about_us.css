@@ -1,0 +1,35 @@
+.section__bird {
+  position: fixed;
+  z-index: -1;
+  width: 80%;
+  opacity: 0.3;
+}
+
+.section__img {
+  position: relative;
+  width: 20vw;
+  padding: 0.1rem;
+  box-shadow: 0 0 10px 5px;
+}
+
+.section__start, .section__house, .section__horse {
+  float: left;
+  left: 10px;
+  top: 20px;
+  margin: 0.5rem 2rem 2rem 1rem;
+  transform: rotate(-10deg);
+}
+
+.section__territory, .section__bath, .section__knight {
+  float: right;
+  margin: 0.5rem 1rem 1rem 1rem;
+  transform: rotate(10deg);
+}
+
+.section_center {
+  z-index: 1;
+}
+
+.section__p {
+  padding: 0 1rem;
+}
