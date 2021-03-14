@@ -1,0 +1,17 @@
+.section__bird {
+  position: fixed;
+  z-index: -1;
+  width: 80%;
+  opacity: 0.3;
+}
+
+.section_center {
+  z-index: 1;
+  text-align: left;
+}
+
+.section__bath_p {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1rem;
+}

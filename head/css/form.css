@@ -1,0 +1,56 @@
+
+.form {
+  position: fixed;
+  display: none;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.form:target {
+  display: block;
+
+}
+
+.close {
+  z-index: 105;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  background: white;
+  opacity: 0.5;
+  text-align: right;
+  color: #1A1C1E;
+}
+
+.form__content h3 {
+  margin: 0.3rem 0.5rem 0.8rem 0.5rem;
+  text-align: center;
+}
+
+.form__content p {
+  margin: 0.5rem;
+}
+
+.shared__form {
+  z-index: 111;
+  display: block;
+  position: absolute;
+  left: 15vw;
+  right: 15vw;
+  padding: 0.5rem;
+  background: grey;
+  overflow: auto;
+}
+
+.form__content {
+  height: 90vh;
+}
+
+.form__tel {
+  top: 20vh;
+  margin: 1rem;
+}
