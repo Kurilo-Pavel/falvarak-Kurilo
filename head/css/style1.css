@@ -1,0 +1,328 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+ }
+
+.crown {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding: 0;
+  background: white;
+  box-shadow: 0 0 3px 5px grey;
+}
+
+.crown__log {
+  z-index: 1;
+  position: relative;
+  display: block;
+  float: left;
+  width: 330px;
+}
+
+.crown__log > a > img {
+  height: 100%;
+}
+
+.crown__log :hover {
+  transform: scale(1.05);
+}
+
+.crown__button {
+  float: right;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: none;
+  margin: 0.5em 1em;
+}
+
+.nav {
+  position: absolute;
+  display: block;
+  text-align: right;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+ }
+
+.nav__menu {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__menu__li{
+  display: inline;
+  list-style-type: none;
+  }
+.nav__menu__li__head{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.nav__menu--sub{
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin-top: 1em;
+  background: white;
+  text-align: left;
+}
+.nav__menu__li--services {
+  width: 120px;
+  padding: 0.5rem 1rem;;
+  }
+
+.nav__menu__li__sub{
+  display: block;
+  box-sizing: border-box;
+  padding: 0.5em ;
+  width: 100%;
+  margin: 0;
+  border: none;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: black;
+
+  }
+
+.nav__menu__li__head:hover {
+  box-shadow: 0 0 15px 1px black;
+    }
+
+.nav__menu__li__sub:hover {
+  box-shadow: none;
+  background: lightgray;
+}
+
+ul.nav__menu > li:hover > ul.nav__menu--sub {
+  display: inherit;
+ }
+.menu__sub{
+  list-style-type: none;
+}
+
+#submenu {
+  display: none;
+  }
+
+.section {
+   background: url("../pictures/пшеничное-поле-фото-4.jpg") center/cover;
+ }
+
+.section__center {
+  z-index: 1;
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 0;
+  margin: 0 10%;
+  background: white;
+  box-shadow: 0 0 30px 12px black;
+  overflow: hidden;
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+footer div {
+  display: inline-block;
+  width: 30%;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer img {
+  width: 30vw;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+#burg_btn {
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+}
+
+@media (max-width: 910px) {
+  .crown {
+    height: 130px;
+  }
+
+  .nav {
+    z-index: 2;
+    height: calc(100% - 70px);
+    text-align: center;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .crown {
+    z-index: 2;
+    display: block;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .crown__log {
+    bottom: 0;
+    width: 65vw;
+    }
+
+  .crown__log > img {
+    width: 60vw;
+  }
+
+  .crown__button {
+    z-index: 3;
+    position: relative;
+    margin:0 auto;
+   float: none;
+  }
+
+
+  .burg {
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: auto;
+    margin: 3vw;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+  }
+#burg_btn{
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+  .menu_burg {
+    height: auto;
+    width: 100%;
+  }
+
+  .menu_burg span {
+    display: inline-block;
+    height: 1vw;
+    width: 90%;
+    border: 1px solid black;
+    margin: 3px;
+    border-radius: 5px;
+    background: black;
+  }
+
+  #burg_btn:checked ~ .menu_burg .burg_top {
+    transition: 1s;
+    transform: rotate(45deg) translateY(450%);
+    transform-origin: 50% 50%;
+
+  }
+
+  #burg_btn:checked ~ .menu_burg .burg_bottom {
+    transition: 1s;
+    transform: rotate(-45deg) translateY(-450%);
+    transform-origin: 50% 50%;
+  }
+
+  #burg_btn:checked ~ .menu_burg .burg_center {
+    transition: 1s;
+    transform: rotate(deg);
+
+  }
+
+  #burg_btn:checked {
+    opacity: 1;
+  }
+
+  .nav {
+    position: relative;
+    display:block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+.nav__menu__li__head{
+  display: block;
+  width: 90%;
+  margin: 1vw auto;
+ }
+  .nav__menu{
+    position: relative;
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav__menu__li__sub:hover {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  #submenu {
+    display: none;
+    position: absolute;
+    opacity: 1;
+     }
+
+  .submenu__btn {
+    cursor: pointer;
+  }
+
+  .nav__menu--sub {
+    display: none;
+    visibility: hidden;
+    z-index: 1;
+  }
+  .nav__menu__li{
+    z-index: 0;
+    position: relative;
+    display: block;
+
+     }
+  ul.nav__menu > li:hover > ul.nav__menu--sub{
+    display: none;
+  }
+    #submenu:checked ~ .nav__menu--sub {
+    display: block;
+    visibility: visible;
+  }
+
+  footer {
+    display: flex;
+    align-items: flex-end;
+  }
+}
