@@ -1,11 +1,12 @@
+//gallery
 var
-  $smallImage = $(".center_image"),
+  $smallImage = $(".center__image"),
   $display = $(".hover_display"),
-  $li = $(".section_ul").find(">li"),
-  $lightBox = $(".double_block"),
-  $close = $(".double_close"),
-  $prev = $(".double_prev"),
-  $next = $(".double_next"),
+  $li = $(".section__ul").find(">li"),
+  $lightBox = $(".double__block"),
+  $close = $(".double__button--close"),
+  $prev = $(".double__button--prev"),
+  $next = $(".double__button--next"),
   targetImg,
   liIndex;
 
@@ -45,5 +46,16 @@ $prev.click(function () {
   $lightBox.find("img").attr("src", targetImg);
 });
 
-
+//menu
+$(".burg").click(function () {
+  if ($("#burg_btn").is(':checked')) {
+    $(".nav__menu").css("display", "block").css("visibility", "visible");
+  } else {
+    $(".nav__menu").css("display", "none").css("visibility", "hidden");
+  }
+});
+//commit
+$(".commit__button").click(function () {
+  $(".commit__square").prepend('<span>' +'&#9996;'+($(".commit__name").val())+'</span>' + "<br>" + '<p>' + ($("#message").val()) +'</p>' + "<br>");
+});
 
