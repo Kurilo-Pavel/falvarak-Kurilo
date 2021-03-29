@@ -1,30 +1,110 @@
-section ul {
+.section__ul {
   text-align: center;
+  margin: 1rem 0;
+  padding: 0;
 }
 
-section li {
+.section__ul li {
   display: inline-block;
   height: 20vw;
   padding: 0;
   margin: 1vw;
   background: white;
   list-style-type: none;
-}
+  }
 
-section img {
-  z-index: -1;
+.center__image {
   height: 20vw;
   width: 30vw;
   opacity: 0.8;
 }
 
-section img:hover {
+.center__image:hover {
   opacity: 1;
 }
 
-img:target {
+.hover_display {
+  position: fixed;
+  z-index: 3;
   width: 100%;
-  background: #CCCCCC;
-  opacity: 1;
+  height: 100%;
+  display: none;
+  background: white;
+  opacity: 0.8;
 }
 
+.full__image {
+  z-index: 4;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  object-fit: cover;
+  }
+
+.double__block {
+  z-index: 4;
+  position: fixed;
+  display: none;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 0 30px 12px black;
+  object-fit: cover;
+  text-align: center;
+  background: #FFFBCC;
+}
+.double__image{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+.double__button--close {
+  position: fixed;
+  z-index: 5;
+  right: 8vw;
+  top: 8vh;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  line-height: 4vw;
+}
+
+.double__button--left-right{
+  position: relative;
+  margin: 2%;
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
+  }
+.double__button{
+  display: inline-block;
+  border: 1px solid black;
+  background: #CCCCCC;
+  font-weight: bold;
+}
+.double__button:hover{
+  background: #999999;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+
+  .double__block{
+    height: 60%;
+  }
+}

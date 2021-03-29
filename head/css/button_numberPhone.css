@@ -1,5 +1,5 @@
 .button {
-  display: flex;
+  display: block;
   padding: 0.3rem 1rem;
   width: 13rem;
   border-radius: 0.3em;
@@ -8,7 +8,6 @@
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
   text-shadow: 0 0.1em 0.05em black;
   box-shadow: 0 0.3em 0.5em 0.05em grey;

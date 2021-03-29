@@ -2,19 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Фальварак 'У Рыся'">
-  <meta property="og:title" content="Отдых в Белоруссии">
-  <meta property="og:description"
-        content="Мы рады предложить вам два банкетных зала на 50 и 130 мест в живописном местечке в 8км от Волковысска, с возможностью ночлега для проведение свадеб, банкетов и любых торжеств">
-  <meta property="og:locale" content="ru_RU">
-  <meta property="og:image" content="pictures/коллаж.jpg">
-  <meta property="og:image:width" content="750">
-  <meta property="og:image:heith" content="530">
-  <meta property="og:title" content="Усадьба Волковысск Снять усадьбу на сутки Цена аренды усадьбы">
-
+  <link href="css/contact.css" rel="stylesheet">
   <link href="css/style1.css" rel="stylesheet">
-  <link href="css/head.css" rel="stylesheet">
   <link href="css/button_numberPhone.css" rel="stylesheet">
   <link href="css/form.css" rel="stylesheet">
   <title> Falvarak u RYSIA </title>
@@ -52,19 +41,54 @@
 </header>
 
 <section class="section">
-
   <div class="section__center">
-       <p class="section__p"> Добро пожаловать</p>
-    <div class="section__img">
     <img class="section__bird" src="pictures/bird.jpg" alt="bird">
-    <img class="section__print" src="pictures/print.png" alt="print"></div>
-    <p class="section__p">мы всегда рады гостям!</p>
+    <div class="section__center__address">
+      <img class="center__warning" src="pictures/каревичи.jpg" alt="Каревичи">
+      <div class="center__address">
+        <address class="center__address__text"> Наш адрес:<br>
+          Деревня Коревичи <br>
+          Гродненская область<br>
+          Республика Беларусь
+          <p class="center__address__tel">Контактный телефон:<br>
+            +375 29 8829545</p></address>
+        <ul class="center__tel_symbol">
+          <li class="tel__symbol"><img src="pictures/Viber.png" alt="Viber" title="Viber"></li>
+          <li class="tel__symbol"><img src="pictures/Telegram.png" alt="Telegram" title="Telegram"></li>
+          <li class="tel__symbol"><img src="pictures/WeChat.png" alt="WeChat" title="WeChat"></li>
+          <li class="tel__symbol"><img src="pictures/WhatsApp.png" alt="WhatsApp" title="WhatsApp"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section__commit">
+      <p class="commit__text">Отзывы:</p>
+      <div class="commit__square">
+      </div>
+      <fieldset class="commit__question">
+        <legend>Оставить отзыв</legend>
+        <label for="name">Имя:</label>
+        <input class="commit__name" type="text" id="name" name="name"><br>
+        <label for="message"></label><br>
+        <textarea class="commit_text" name="massage" id="message" rows="5" cols="40" minlength="10" maxlength="1000"></textarea><br>
+        <input class="commit__button" type="button" value="Отправить">
+      </fieldset>
+    </div>
+    <ul class="section__messenger">
+      <li><a href="https://www.facebook.com/"><img src="pictures/Facebook.png" alt="Facebook"
+                                                   title="Facebook"></a>
+      </li>
+      <li><a href="https://vk.com/"><img src="pictures/VK.png" alt="VK" title="VK"></a></li>
+      <li><a href="https://twitter.com/"><img src="pictures/Twitter.png" alt="Twitter" title="Twitter"></a></li>
+      <li><a href="https://www.instagram.com/"><img src="pictures/Instagram.png" alt="Instagram"
+                                                    title="Instagram"></a>
+      </li>
+    </ul>
   </div>
 </section>
 <div id="open__tel__modal" class="form">
   <a class="close" href="#close" title="Закрыть">X</a>
   <fieldset class="form__tel shared__form">
-    <h3>Мы с вами свяжемся  в ближайшее время</h3>
+    <h3>Мы с вами свяжемся в ближайшее время</h3>
     <label for="name">Как вас завут:</label>
     <input type="text" id="name" name="name"><br><br>
     <label for="tel">Номер телефона:</label>
@@ -79,8 +103,7 @@
   <div><img src="pictures/footer.jpg" alt='Фальварак "У Рыся"'></div>
   <div class="right"><p> Курило Павел<br>8 (029) 7839712</p></div>
 </footer>
+</body>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/shared.js"></script>
-</body>
-
 </html>

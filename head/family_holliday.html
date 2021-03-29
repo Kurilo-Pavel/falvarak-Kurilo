@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <link href="css/style1.css" rel="stylesheet">
+  <link href="css/shared.css" rel="stylesheet">
+  <link href="css/button_numberPhone.css" rel="stylesheet">
+  <link href="css/card.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <title> Falvarak u RYSIA </title>
+</head>
+<body>
+<header class="crown">
+  <a class="crown__log" href="falvarak.html"><img src="pictures/header.png" alt="Логотип" title="Главная страница"></a>
+
+  <div class="burg">
+
+    <input id="burg_btn" type="checkbox">
+    <label class="menu_burg" for="burg_btn">
+      <span class="burg_top"></span>
+      <span class="burg_center"></span>
+      <span class="burg_bottom"></span>
+    </label></div>
+  <a class="button crown__button" href="#open__tel__modal"> <img class="button__img" alt="Velcom" src="pictures/a1.jpg">+375 29 8829545</a>
+  <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__menu__li "><a class="nav__menu__li__head" href="about_us.html"> О нас</a></li>
+      <li class="nav__menu__li--services nav__menu__li__head">
+        <input id="submenu" type="checkbox">
+        <label class="submenu_btn" for="submenu">Услуги</label>
+        <ul class="nav__menu--sub">
+          <li class="menu__sub"><a class="nav__menu__li__sub" href="family_holliday.html">Семейный отдых</a></li>
+          <li class="menu__sub"><a class="nav__menu__li__sub" href="party.html">Корпоратив</a></li>
+          <li class="menu__sub"><a class="nav__menu__li__sub" href="bath.html">Баня</a></li>
+          <li class="menu__sub"><a class="nav__menu__li__sub" href="sport.html">Спортивные развлечения</a></li>
+        </ul>
+      </li>
+      <li class="nav__menu__li"><a class="nav__menu__li__head" href="gallery.html">Галерея</a></li>
+      <li class="nav__menu__li"><a class="nav__menu__li__head" href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="section">
+  <div class="section__center">
+    <img class="section__bird" src="pictures/bird.jpg" alt="bird">
+    <p class="section__bath_p"> Устали от городской суеты и хотите отдохнуть на выходных вдали
+      от города? У нас вы можете снять на сутки деревенский домик со всеми удобствами и наслаждаться
+      природой на берегу реки. Сходить с семьей утром в лес за грибами или ягодами, а вечером устроить шашлыки.
+      Любите устраивать с друзьями кемпинг? Мы вам поможем! У нас есть отлмчные палатки, а так же на берегу
+      реки расположены две беседки.
+    </p>
+    <a class="section__card card__left" href="#open__modal">
+      <div class="border__img">
+        <img class="card" src="pictures/palatka.jpg" alt="Палатка"></div>
+      <ul class="card__content">
+        <li>Палатка</li>
+        <li>Мангал + дрова</li>
+        <li>Лежак 4 шт.</li>
+        <li>max 4 чел</li>
+      </ul>
+      <p class="card__price">30 руб/сутки</p>
+    </a>
+    <a class="section__card card__right" href="#open__modal">
+      <div class="border__img">
+        <img class="card" src="pictures/besedka.jpg" alt="Беседка">
+      </div>
+      <ul class="card__content">
+        <li>Беседка</li>
+        <li>Мангал + дрова</li>
+        <li>Вкусный чай</li>
+        <li>max 10 чел</li>
+      </ul>
+      <p class="card__price">10 руб/час</p>
+    </a>
+    <a class="section__card card__center" href="#open__modal">
+      <div class="border__img">
+        <img class="card" src="pictures/dom.jpg" alt="Дом">
+      </div>
+      <ul class="card__content">
+        <li>Дом</li>
+        <li>Мангал + дрова</li>
+        <li>Постельное белье</li>
+        <li>Вкусный чай</li>
+        <li>max 5 чел</li>
+      </ul>
+      <p class="card__price">100 руб/сутки</p>
+    </a>
+  </div>
+</section>
+<div id="open__modal" class="form">
+  <a class="close" href="#close" title="Закрыть">X</a>
+  <fieldset class="form__content shared__form">
+    <legend></legend>
+    <h3>Предварительная запись</h3>
+    <label for="name">Как вас завут:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="tel">Номер телефона:</label>
+    <input type="tel" id="tel" name="tel"><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"><br>
+    <label for="people"> Количество человек</label>
+    <input type="number" id="people" name="people" min="1" max="100"><br>
+    <p>Выберите предполагаемый период посещения</p>
+    <label for="datemin">с</label>
+    <input type="date" id="datemin" name="date" min="2021-04-03">
+    <label for="datemax">по</label>
+    <input type="date" id="datemax" name="date" max="2021-05-03">
+    <p>Выберите мероприятие</p>
+    <select name="event">
+      <option value="none"></option>
+      <option value="barel bath">Баня-бочка</option>
+      <option value="billiards">Баня-бильярд</option>
+      <option value="canoe">Сплав на байдарках</option>
+      <option value="horse">Верховая езда</option>
+      <option value="holiday">Проведение праздничного мероприятия</option>
+      <option value="lunch">Комплексные обеды</option>
+    </select><br>
+    <label for="message">Задайте вопрос</label><br>
+    <textarea name="massage" id="message" rows="5" cols="35"></textarea><br>
+    <input type="button" value="Отправить">
+  </fieldset>
+</div>
+<div id="open__tel__modal" class="form">
+  <a class="close" href="#close" title="Закрыть">X</a>
+  <fieldset class="form__tel shared__form">
+    <h3>Мы с вами свяжемся в ближайшее время</h3>
+    <label for="name">Как вас завут:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="tel">Номер телефона:</label>
+    <input type="tel" id="tel" name="tel"><br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="button" value="Отправить">
+  </fieldset>
+</div>
+<footer>
+  <div class="left"><p> 2010-2021гг. <br> Фальварак "У Рыся"<br> Отдых в Беларуссии</p></div>
+  <div><img src="pictures/footer.jpg" alt='Фальварак "У Рыся"'></div>
+  <div class="right"><p> Курило Павел<br>8 (029) 7839712</p></div>
+</footer>
+</body>
+</html>
