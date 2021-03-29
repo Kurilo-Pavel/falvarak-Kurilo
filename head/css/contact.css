@@ -1,71 +1,126 @@
 .section__bird {
-  position: fixed;
-  z-index: -1;
-  width: 80%;
-  opacity: 0.3;
+    position: fixed;
+    z-index: -1;
+    width: 80%;
+    opacity: 0.3;
 }
 
-.section_center {
-  z-index: 1;
+.section__center__address {
+    position: relative;
+    height: 30vw;
+    margin-bottom: 0.5em;
 }
 
-.section__warning {
-  position: relative;
-  float: left;
-  width: 25vw;
-  margin: 2rem 2rem 1rem 2rem;
-  box-shadow: 0 0 10px 5px;
+.center__warning {
+    position: relative;
+    float: right;
+    width: 30%;
+    margin: 3vw 3vw 1vw 1vw;
+    box-shadow: 0 0 10px 5px;
 }
 
-.section__address, .section__tel {
-  font-weight: bold;
-  font-size: 1rem;
-  text-shadow: -4px 7px 8px rgba(16, 8, 46, 0.61);
+.center__address {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin: 3vw;
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-shadow: -4px 7px 8px rgba(16, 8, 46, 0.61);;
 }
 
-.section__tel-symbol {
-  padding: 0;
-  margin: 0;
+.center__tel_symbol {
+    padding: 0;
+    margin: 0;
 }
 
-.section__tel-symbol li {
-  display: inline-block;
-  list-style-type: none;
+.tel__symbol {
+    display: inline-block;
+    list-style-type: none;
 }
 
-.section__tel-symbol img {
-  height: 3vw;
-  padding: 0 5px;
-  border-radius: 50%;
+.tel__symbol img {
+    height: 3vw;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.section__commit {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.commit__text {
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+}
+.commit__square span{
+    font-size: 3vw;
+}
+.commit__square p{
+    margin: 0;
+    color: dimgrey;
+    font-size: 2.5vw;
+    font-style: italic;
+}
+.commit__question {
+    margin: 0 auto;
+    width: 50%;
+}
+textarea{
+    text-rendering: auto;
+    cursor: text;
+
 }
 
 .section__messenger {
-  bottom: 0;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  text-align: center;
+    bottom: 0;
+    padding: 0;
+    margin: 5vw;
+    list-style-type: none;
+    text-align: center;
 }
 
 .section__messenger li {
-  display: inline-block;
-  width: 5vw;
-  height: 5vw;
-  margin: 1vw;
-  border-radius: 50%;
-  overflow: hidden;
+    display: inline-block;
+    width: 5vw;
+    height: 5vw;
+    margin: 1vw;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .section__messenger img {
-  width: 5vw;
+    width: 5vw;
 }
 
 .section__messenger img:hover {
-  box-shadow: 0 0 3px 5px white;
-  border-radius: 50%;
-  transform: scale(1.2);
+    box-shadow: 0 0 3px 5px white;
+    border-radius: 50%;
+    transform: scale(1.2);
 }
-.commit{
-  margin: 1rem;
-  width: 200px;
+@media (max-width: 600px) {
+    .center__address{
+       font-size: 4vw;
+    }
+    .section__center__address{
+        height: 50vw;
+    }
+    .commit__text {
+        font-size: 5vw;
+    }
+    .commit__square span{
+        font-size: 5vw;
+    }
+    .commit__square p{
+        font-size: 4vw;
+    }
+    .tel__symbol img {
+        height: 5vw;
+    }
 }
+
