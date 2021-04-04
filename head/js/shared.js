@@ -4,7 +4,7 @@ var
   $display = $(".hover_display"),
   $li = $(".section__ul").find(">li"),
   $lightBox = $(".double__block"),
-  $close = $(".double__button--close"),
+  $close = $(".full__image"),
   $prev = $(".double__button--prev"),
   $next = $(".double__button--next"),
   targetImg,
@@ -47,15 +47,58 @@ $prev.click(function () {
 });
 
 //menu
+
 $(".burg").click(function () {
   if ($("#burg_btn").is(':checked')) {
-    $(".nav__menu").css("display", "block").css("visibility", "visible");
+    $(".nav__menu").slideUp(1000);
+    $(".nav__menu").css("display", "block");
   } else {
-    $(".nav__menu").css("display", "none").css("visibility", "hidden");
+    $(".nav__menu").slideDown(1000)
   }
 });
-//commit
-$(".commit__button").click(function () {
-  $(".commit__square").prepend('<span>' +'&#9996;'+($(".commit__name").val())+'</span>' + "<br>" + '<p>' + ($("#message").val()) +'</p>' + "<br>");
+
+$(".nav__menu__li--services").click(function () {
+  if ($("#submenu").is(":checked")) {
+    $(".nav__menu--sub").slideDown(1000);
+    $(".nav__menu--sub").css("display", "block");
+  } else {
+    $(".nav__menu--sub").slideUp(1000);
+  }
 });
 
+
+//commit
+$(".commit__button").click(function () {
+  $(".commit__square").prepend('<span>' + '&#9996;' + ($(".commit__name").val()) + '</span>' + "<br>" + '<p>' + ($("#message").val()) + '</p>' + "<br>");
+});
+
+//about_us slaider
+const container = document.getElementById('section_container')
+const leftCont = document.getElementById('left_container')
+const rightCont = document.getElementById('right_container')
+
+const cont = document.querySelectorAll('#section_container div')
+
+let idx = 0
+
+function changeContainer() {
+  if (idx > cont.length - 1) {
+    idx = 0
+  } else if (idx < 0) {
+    idx = cont.length - 1
+  }
+  container.style.transform = `translateY(${-idx * 390}px)`
+
+}
+
+leftCont.addEventListener('click', () => {
+  idx--
+  changeContainer()
+
+})
+
+rightCont.addEventListener('click', () => {
+  idx++
+  changeContainer()
+ 
+})
