@@ -1,44 +1,156 @@
-
 .section__bird {
-  width: 100%;
-  opacity: 1;
+    width: 100%;
+    opacity: 1;
+}
+
+.section {
+
 }
 
 .section__center {
-  position: relative;
-  text-align: center;
+    position: relative;
+    text-align: center;
+    min-height: 460px;
+    bottom: 0;
+
 }
 
 .section__p {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .section__img {
-  position: relative;
+    position: relative;
 }
 
 .section__print {
-  position: absolute;
-  z-index: 2;
-  bottom: -3vw;
-  right: 5vw;
-  width: 15vw;
-  border-radius: 50%;
-  transform: rotate(45deg);
-  animation: print 3s infinite linear;
+    position: absolute;
+    z-index: 2;
+    bottom: -3vw;
+    right: 5vw;
+    width: 15vw;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    animation: print 3s infinite linear;
 }
 
 .section__p {
-  margin: 1rem 0;
-  font-size: 7vw;
-  text-shadow: 0 3px 2px grey;
-  }
+    margin: 1rem 0;
+    font-size: 7vw;
+    text-shadow: 0 3px 2px grey;
+}
 
 @keyframes print {
-  25% {
-    box-shadow: 0 0 20px 10px red;
-  }
-  50% {
-    box-shadow: 0 0 10px 0 red;
-  }
+    25% {
+        box-shadow: 0 0 20px 10px red;
+    }
+    50% {
+        box-shadow: 0 0 10px 0 red;
+    }
+}
+.pacman{
+    width: 100%;
+    height: 30vw;
+}
+
+.circle {
+    position: relative;
+    display: block;
+    top: 2vw;
+    left: 5vw;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background: red;
+    transform: rotate(-35deg);
+    animation: going 20s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes going {
+    0% {
+        transform: translate(0, 0) rotate(-35deg);
+    }
+    50% {
+        transform: translate(60vw, 0) rotate(-35deg);
+    }
+    51% {
+        transform: translate(60vw, 0) rotate(55deg);
+    }
+    55% {
+        transform: translate(60vw, 15vw) rotate(55deg);
+    }
+    56% {
+        transform: translate(60vw, 15vw) rotateY(145deg) rotate(-35deg);
+    }
+    89% {
+        transform: translate(0px, 15vw) rotateY(145deg) rotate(-35deg);
+    }
+    90% {
+        transform: translate(0px, 15vw) rotateY(145deg) rotate(-125deg);
+    }
+    100% {
+        transform: translate(0, 0) rotateY(145deg) rotate(-125deg);
+    }
+
+}
+
+.ayes {
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    display: block;
+    background: white;
+    top: 25%;
+    left: 65%;
+    border-radius: 50%;
+}
+
+.mouth {
+    position: absolute;
+    width: 5.5vw;
+    height: 5.5vw;
+    display: block;
+    background: white;
+    top: 50%;
+    left: 50%;
+    animation: mouth 0.2s ease;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mouth {
+    0% {
+        clip-path: polygon(0% 0%, 0% 100%, 100% 0%, 0% 0%)
+    }
+    10% {
+        clip-path: polygon(0% 0%, 10% 100%, 100% 10%, 0% 0%)
+    }
+    20% {
+        clip-path: polygon(0% 0%, 20% 100%, 100% 20%, 0% 0%)
+    }
+    30% {
+        clip-path: polygon(0% 0%, 30% 100%, 100% 30%, 0% 0%)
+    }
+    40% {
+        clip-path: polygon(0% 0%, 40% 100%, 100% 40%, 0% 0%)
+    }
+    50% {
+        clip-path: polygon(0% 0%, 50% 100%, 100% 50%, 0% 0%)
+    }
+    60% {
+        clip-path: polygon(0% 0%, 60% 100%, 100% 60%, 0% 0%)
+    }
+    70% {
+        clip-path: polygon(0% 0%, 70% 100%, 100% 70%, 0% 0%)
+    }
+    80% {
+        clip-path: polygon(0% 0%, 80% 100%, 100% 80%, 0% 0%)
+    }
+    90% {
+        clip-path: polygon(0% 0%, 90% 100%, 100% 90%, 0% 0%)
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 0%)
+    }
 }
