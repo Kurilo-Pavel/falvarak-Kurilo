@@ -1,17 +1,17 @@
-
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 100%;
   height: auto;
   box-sizing: border-box;
- }
+  background: black;
+}
 
 .crown {
-  position: relative;
   z-index: 2;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 120px;
   padding: 0;
@@ -20,15 +20,7 @@ body {
 }
 
 .crown__log {
-  z-index: 1;
-  position: relative;
-  display: block;
-  float: left;
   width: 330px;
-}
-
-.crown__log > a > img {
-  height: 100%;
 }
 
 .crown__log :hover {
@@ -37,32 +29,29 @@ body {
 
 .crown__button {
   float: right;
-  overflow: hidden;
   box-sizing: border-box;
-  border: none;
   margin: 0.5em 1em;
 }
 
 .nav {
   position: absolute;
-  display: block;
   text-align: right;
   bottom: 0;
   width: 100%;
   height: calc(100% - 60px);
- }
+}
 
 .nav__menu {
-  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.nav__menu__li{
+.nav__menu__li {
   display: inline;
   list-style-type: none;
-  }
-.nav__menu__li__head{
+}
+
+.nav__menu__li__head {
   display: inline-block;
   padding: 0.5rem 1rem;
   margin: 0.5rem;
@@ -70,69 +59,74 @@ body {
   font-weight: bold;
   font-size: 1.4rem;
   border-radius: 5px;
-  text-align: center;
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
-.nav__menu--sub{
-  position: relative;
-  display: none;
-  float: left;
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin-top: 1em;
-  background: white;
-  text-align: left;
-}
+
 .nav__menu__li--services {
-  width: 120px;
-  padding: 0.5rem 1rem;;
-  }
+  padding: 0.5rem 1rem;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-.nav__menu__li__sub{
-  display: block;
-  box-sizing: border-box;
-  padding: 0.5em ;
-  width: 100%;
-  margin: 0;
-  border: none;
-  font-size: 0.7em;
-  text-decoration: none;
-  color: black;
-
-  }
-
-.nav__menu__li__head:hover {
+.nav__menu__li--services:hover {
   box-shadow: 0 0 15px 1px black;
-    }
+}
 
-.nav__menu__li__sub:hover {
-  box-shadow: none;
+#submenu:checked ~ .nav__menu--sub {
+  display: block;
+}
+
+.nav__menu--sub {
+  position: absolute;
+  display: none;
+  top: 52px;
+  left: -2.5rem;
+  padding: 0;
+  border-radius: 0 0 8px 8px;
   background: lightgray;
 }
 
-ul.nav__menu > li:hover > ul.nav__menu--sub {
-  display: inherit;
- }
-.menu__sub{
+.nav__menu__li__sub {
+  display: block;
+  padding: 0.5em 1em;
+  margin: 0;
+  text-align: left;
+  color: black;
+  text-decoration: none;
+}
+
+.nav__menu__li__head:hover {
+  box-shadow: 0 0 15px 1px black;
+}
+
+.menu__sub:hover {
+  background: white;
+}
+
+.menu__sub {
   list-style-type: none;
+}
+
+.submenu__btn {
+  cursor: pointer;
 }
 
 #submenu {
   display: none;
-  }
+}
 
 .section {
-   background: url("../pictures/пшеничное-поле-фото-4.jpg") center/cover;
- }
+  background: url("../pictures/пшеничное-поле-фото-4.jpg") center/cover;
+}
 
 .section__center {
-  z-index: 1;
   position: relative;
-  display: block;
-  height: 100%;
-  padding: 0;
+  min-height: 390px;
   margin: 0 10%;
   background: white;
   box-shadow: 0 0 30px 12px black;
@@ -140,7 +134,8 @@ ul.nav__menu > li:hover > ul.nav__menu--sub {
 }
 
 footer {
-  display: inline-block;
+  position: relative;
+
   width: 100%;
   background: black;
   color: white;
@@ -168,8 +163,9 @@ footer p {
 
 #burg_btn {
   position: absolute;
+  visibility: hidden;
+  margin: 0;
   padding: 0;
-  opacity: 0;
 }
 
 @media (max-width: 910px) {
@@ -182,109 +178,115 @@ footer p {
     height: calc(100% - 70px);
     text-align: center;
   }
-
 }
 
 
 @media (max-width: 600px) {
   .crown {
     z-index: 2;
-    display: block;
     overflow: hidden;
     height: auto;
   }
-
-  .crown__log {
-    bottom: 0;
-    width: 65vw;
-    }
 
   .crown__log > img {
     width: 60vw;
   }
 
   .crown__button {
-    z-index: 3;
-    position: relative;
-    margin:0 auto;
-   float: none;
+    margin: 0 auto;
+    float: none;
   }
 
 
   .burg {
-    z-index: 2;
-    display: inline-block;
+    z-index: 3;
     position: relative;
-    width: 80px;
-    height: auto;
-    margin: 3vw;
-    text-align: center;
+    top: 2vw;
+    right: 3vw;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
     float: right;
+    overflow: hidden;
   }
-#burg_btn{
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-}
-  .menu_burg {
+
+  .menu_burg_checked {
     height: auto;
     width: 100%;
   }
 
-  .menu_burg span {
-    display: inline-block;
-    height: 1vw;
-    width: 90%;
-    border: 1px solid black;
-    margin: 3px;
+  .menu_burg,
+  .menu_burg::after,
+  .menu_burg::before {
+    position: absolute;
+    display: block;
+    height: 6px;
+    width: 60px;
+    top: 50%;
+    margin-top: -3px;
+    left: 50%;
+    margin-left: -30px;
     border-radius: 5px;
     background: black;
+    box-sizing: border-box;
   }
 
-  #burg_btn:checked ~ .menu_burg .burg_top {
-    transition: 1s;
-    transform: rotate(45deg) translateY(450%);
-    transform-origin: 50% 50%;
-
+  .menu_burg::after,
+  .menu_burg::before {
+    content: "";
+    transition: 0.5s;
   }
 
-  #burg_btn:checked ~ .menu_burg .burg_bottom {
-    transition: 1s;
-    transform: rotate(-45deg) translateY(-450%);
-    transform-origin: 50% 50%;
+  .menu_burg::after {
+    transform: translateY(-12px);
   }
 
-  #burg_btn:checked ~ .menu_burg .burg_center {
-    transition: 1s;
-    transform: rotate(deg);
-
+  .menu_burg::before {
+    transform: translateY(12px);
   }
 
-  #burg_btn:checked {
-    opacity: 1;
+  #burg_btn:checked ~ .menu_burg_checked > .burg > .menu_burg:before {
+    transform: rotate(45deg);
+    visibility: visible;
+  }
+
+  #burg_btn:checked ~ .menu_burg_checked > .burg > .menu_burg:after {
+    transform: rotate(-45deg);
+    visibility: visible;
+  }
+
+  #burg_btn:checked ~ .menu_burg_checked > .burg > .menu_burg {
+    visibility: hidden;
+  }
+
+  .nav__menu {
+    position: relative;
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #burg_btn:checked ~ .nav > .nav__menu {
+    display: block;
   }
 
   .nav {
     position: relative;
-    display:block;
+    display: block;
     width: 100%;
     height: auto;
     margin: 10px 0 0 0;
     text-align: center;
   }
-.nav__menu__li__head{
-  display: block;
-  width: 90%;
-  margin: 1vw auto;
- }
-  .nav__menu{
-    position: relative;
-    display: none;
-    visibility: hidden;
+
+  .nav__menu__li__head {
+    display: block;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 2px auto;
+    padding: 0.5rem 0;
+    border-radius: 0;
+    font-size: 1rem;
   }
 
   .nav__menu__li__sub:hover {
@@ -295,8 +297,7 @@ footer p {
   #submenu {
     display: none;
     position: absolute;
-    opacity: 1;
-     }
+  }
 
   .submenu__btn {
     cursor: pointer;
@@ -304,25 +305,39 @@ footer p {
 
   .nav__menu--sub {
     display: none;
-    visibility: hidden;
-    z-index: 1;
-  }
-  .nav__menu__li{
-    z-index: 0;
+    top: 0;
+    height: 0;
     position: relative;
-    display: block;
+    margin: 0;
+    left: 0;
+    background: white;
+  }
 
-     }
-  ul.nav__menu > li:hover > ul.nav__menu--sub{
+  .nav__menu__li {
+    position: relative;
+    display: inline;
+  }
+
+  ul.nav__menu > li:hover > ul.nav__menu--sub {
     display: none;
   }
-    #submenu:checked ~ .nav__menu--sub {
-    display: block;
-    visibility: visible;
+
+  .nav__menu__li__head:hover {
+    box-shadow: none;
   }
 
-  footer {
-    display: flex;
-    align-items: flex-end;
+  #submenu:checked ~ .nav__menu--sub {
+    display: block;
+    animation: height 1s;
+    animation-fill-mode: forwards;
   }
+
+  @keyframes height {
+    100% {
+      height: 130px;
+    }
+  }
+
+
 }
+

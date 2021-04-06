@@ -8,28 +8,156 @@
 .section__img {
   position: relative;
   width: 20vw;
-  padding: 0.1rem;
+  padding: 0.3rem;
   box-shadow: 0 0 10px 5px;
 }
 
-.section__start, .section__house, .section__horse {
+.section__left {
   float: left;
-  left: 10px;
-  top: 20px;
-  margin: 0.5rem 2rem 2rem 1rem;
-  transform: rotate(-10deg);
+  margin: 1rem 1rem 0.5rem 1rem;
+
 }
 
-.section__territory, .section__bath, .section__knight {
+.section__right {
   float: right;
-  margin: 0.5rem 1rem 1rem 1rem;
-  transform: rotate(10deg);
+  margin: 1rem 1rem 0.5rem 1rem;
+
+}
+.section__center_p{
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.section__center_p:first-letter{
+  font-size: 2rem;
+  color: red;
 }
 
 .section__center {
   z-index: 1;
+  min-height: 370px;
 }
 
-.section__p {
-  padding: 0 1rem;
+.container_pointer {
+  position: fixed;
+  display: block;
+  margin: 0;
+  width: 10vw;
+  height: 49vh;
+  padding: 0;
+  opacity: 0.3;
 }
+
+.pointer {
+  position: absolute;
+  display: block;
+  bottom: 50%;
+  width: 20vh;
+  height: 10px;
+  padding: 5px;
+  border-radius: 10px 5px 5px 10px;
+  background: gray;
+}
+
+.pointer--left {
+  left: 30%;
+}
+
+.up--left--pointer {
+  transform: rotate(70deg);
+  transform-origin: left top;
+}
+
+.down--left--pointer {
+  transform-origin: left bottom;
+  transform: rotate(-70deg);
+}
+
+#right_container {
+  right: 0;
+}
+
+.pointer--right {
+  right: 30%;
+}
+
+.up--right--pointer {
+  transform: rotate(-70deg);
+  transform-origin: right top;
+}
+
+.down--right--pointer {
+  transform-origin: right bottom;
+  transform: rotate(70deg);
+}
+
+#section_container {
+  height: 450px;
+
+}
+
+.container {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+
+#container_text {
+  display: none;
+}
+
+.container_button {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .section__img {
+    position: absolute;
+    margin-top: 2rem;
+    width: 70%;
+    left: 50%;
+    margin-left: -35%;
+    text-align: center;
+    float: none;
+    transform: scale(1);
+    transition: transform 0.5s ease-in;
+  }
+
+  .container_button {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -6.5rem;
+    bottom: 0.5rem;
+    color: black;
+  }
+
+  .container_text {
+    display: block;
+  }
+
+  .section__center_p {
+    position: absolute;
+    font-size: 3.2vw;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform 0.5s ease-out;
+  }
+  .section__center_p:first-letter{
+    font-size: 4vw;
+  }
+
+  #container_text:checked ~ .container>.section__center_p {
+    transform: scale(1);
+    opacity: 1;
+
+
+  }
+
+  #container_text:checked ~ .container>.section__img {
+    transform: scale(0) rotate(560deg);
+  }
+
+}
+
