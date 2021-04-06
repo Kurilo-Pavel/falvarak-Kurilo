@@ -3,17 +3,12 @@
     opacity: 1;
 }
 
-.section {
-
-}
-
 .section__center {
     position: relative;
     text-align: center;
-    min-height: 460px;
+    min-height: 370px;
     bottom: 0;
-
-}
+   }
 
 .section__p {
     font-size: 3rem;
@@ -153,4 +148,10 @@
     100% {
         clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 0%)
     }
+}
+@media (max-width: 600px) {
+    .section__center{
+        padding-top: 10vh;
+    }
+
 }

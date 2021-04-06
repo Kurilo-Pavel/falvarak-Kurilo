@@ -1,63 +1,85 @@
 
 .section__card {
-  position: relative;
-  display: inline-block;
-  width: 30vw;
-  height: 40vw;
-  margin: 1rem;
-  border: 1px solid black;
-  background: black;
-  color: white;
-  font-size: 2.5vw;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0.3em 0.3em 0.5em 0.2em grey;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    width: 30vw;
+    height: 40vw;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0.3em 0.3em 0.5em 0.2em grey;
 }
 
 .section__card:active {
-  transform: translate(0.3em, 0.3em);
-  box-shadow: 0 0.3em 0.5em 0.05em grey;
+    transform: translate(0.3em, 0.3em);
+    box-shadow: 0 0.3em 0.5em 0.05em grey;
 }
 
 .card__left {
-  float: left;
+    float: left;
+    margin: 1rem;
 }
 
 .card__right {
-  float: right;
+    float: right;
+    margin: 1rem;
+}
+
+.card__center {
+    left: 50%;
+    margin-left: -15vw;
+    margin-bottom: 1rem;
+
 }
 
 .border__img {
-  height: 40%;
-  overflow: hidden;
+    height: 40%;
+    overflow: hidden;
 
 }
 
 .card {
-  width: 100%;
-  margin: 0;
+    width: 100%;
+    margin: 0;
 
 }
 
 .card__content {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .card__price {
-  position: absolute;
-  width: 100%;
-  bottom: 0.3rem;
-  margin: 0;
-  font-size: 3vw;
-  text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0.3rem;
+    margin: 0;
+    font-size: 3vw;
+    text-align: center;
 }
-
 .card__content li {
-  padding: 0.1rem 0;
+    padding: 0.1rem 0;
 }
 
 .card__content li:nth-child(2n) {
-  background: #1A1C1E;
+    background: #1A1C1E;
+}
+
+@media (max-width: 600px) {
+
+    .section__card {
+        width: 60%;
+        height: 70vw;
+        float: none;
+        margin-left: 20%;
+    }
+    .card__center {
+        left: 0;
+        margin-left: 20%;
+    }
 }

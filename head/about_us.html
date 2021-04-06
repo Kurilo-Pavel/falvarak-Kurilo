@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width">
   <link href="css/about_us.css" rel="stylesheet">
   <link href="css/style1.css" rel="stylesheet">
   <link href="css/button_numberPhone.css" rel="stylesheet">
@@ -10,7 +10,7 @@
   <title> О нас </title>
 </head>
 <body>
-<header class="crown">
+<header class="crown" id="header">
   <a class="crown__log" href="falvarak.html"><img src="pictures/header.png" alt="Логотип" title="Главная страница"></a>
   <input id="burg_btn" type="checkbox">
   <label class="menu_burg_checked" for="burg_btn">
@@ -18,28 +18,37 @@
       <span class="menu_burg"></span>
     </a>
   </label>
-  <a class="button crown__button" title="Обратный звонок" href="#open__tel__modal"> <img class="button__img" alt="Velcom" src="pictures/a1.jpg" title="Оператор">+375
+  <a class="button crown__button" title="Обратный звонок" href="#open__tel__modal"> <img class="button__img"
+                                                                                         alt="Velcom"
+                                                                                         src="pictures/a1.jpg"
+                                                                                         title="Оператор">+375
     29 8829545</a>
   <nav class="nav">
     <ul class="nav__menu">
-      <li class="nav__menu__li "><a class="nav__menu__li__head" title="Немножко о нас" href="about_us.html"> О нас</a></li>
+      <li class="nav__menu__li "><a class="nav__menu__li__head" title="Немножко о нас" href="about_us.html"> О нас</a>
+      </li>
       <li class="nav__menu__li--services nav__menu__li__head" title="Наши услуги">
         <input id="submenu" type="checkbox">
         <label class="submenu_btn" for="submenu">Услуги</label>
         <ul id="nav_menu_open" class="nav__menu--sub">
-          <li class="menu__sub"><a class="nav__menu__li__sub" title="Отдых с семьей" href="family_holliday.html">Семейный отдых</a></li>
-          <li class="menu__sub"><a class="nav__menu__li__sub" title="Все для праздника" href="party.html">Корпоратив</a></li>
-          <li class="menu__sub"><a class="nav__menu__li__sub"  title="Аренда бань" href="bath.html">Баня</a></li>
-          <li class="menu__sub"><a class="nav__menu__li__sub" title="Спортивный отдых" href="sport.html">Спортивные развлечения</a></li>
+          <li class="menu__sub"><a class="nav__menu__li__sub" title="Отдых с семьей" href="family_holliday.html">Семейный
+            отдых</a></li>
+          <li class="menu__sub"><a class="nav__menu__li__sub" title="Все для праздника" href="party.html">Корпоратив</a>
+          </li>
+          <li class="menu__sub"><a class="nav__menu__li__sub" title="Аренда бань" href="bath.html">Баня</a></li>
+          <li class="menu__sub"><a class="nav__menu__li__sub" title="Спортивный отдых" href="sport.html">Спортивные
+            развлечения</a></li>
         </ul>
       </li>
       <li class="nav__menu__li"><a class="nav__menu__li__head" title="Фотогалерея" href="gallery.html">Галерея</a></li>
-      <li class="nav__menu__li"><a class="nav__menu__li__head" title="Наши контакты" href="contact.html">Контакты</a></li>
+      <li class="nav__menu__li"><a class="nav__menu__li__head" title="Наши контакты" href="contact.html">Контакты</a>
+      </li>
     </ul>
   </nav>
 </header>
 
 <section class="section">
+
   <a class="container_pointer" id="left_container">
     <span class="pointer pointer--left up--left--pointer"></span>
     <span class="pointer pointer--left down--left--pointer"></span>
@@ -51,17 +60,15 @@
   <div class="section__center" id="section">
     <img class="section__bird" src="pictures/bird.jpg" alt="bird">
     <div id="section_container">
-
       <input id="container_text" type="checkbox">
-
-
       <div class="container">
         <label class="button container_button" for="container_text">Click me</label>
         <img class="section__img section__left" src="pictures/gthdfz.jpg" alt="Добро пожаловать">
         <p class="section__center_p">Агроусадьба «У Рыся» была открыта в 2010 году. И несмотря на столь короткий,
           казалось
           бы,
-          срок существования, уже успела принять огромное количество гостей. Расположена агроусадьба в деревне Коревичи
+          срок существования, уже успела принять огромное количество гостей. Расположена агроусадьба в деревне
+          Коревичи
           Свислочского р-на Гродненской области, в 10 км от г. Волковыска. Здесь, вдали от городской пыли и
           загрязненного
           воздуха, на просторных землях Свислочины, рядом с живописной речушкой, которая заполнена всегда холодной и
@@ -69,7 +76,8 @@
           водой, и богатым ягодами и грибами лесом, в окружении небольшой жилой деревушки, вы можете по-настоящему
           насладиться всеми прелестями деревенской жизни, совмещенной с современными комфортными условиями.
 
-          В усадьбе вас встретят радушные хозяева - Рышард и Янина. Это открытые, жизнерадостные, изобретательные люди,
+          В усадьбе вас встретят радушные хозяева - Рышард и Янина. Это открытые, жизнерадостные, изобретательные
+          люди,
           которые не оставят вас без внимания, и сделают все возможное и невозможное, чтобы Вы захотели возвращаться к
           ним
           снова и снова.</p></div>
@@ -114,12 +122,15 @@
         <img class="section__img section__right" src="pictures/bath.jpg" alt="Дом отдыха">
 
         <p class="section__center_p ">
-          Рядом с хозяйским домом возведен своеобразный «дом отдыха», в котором есть и банька с парилкой да душем Шарко,
+          Рядом с хозяйским домом возведен своеобразный «дом отдыха», в котором есть и банька с парилкой да душем
+          Шарко,
           и
           бильярдный зал с шикарным камином да барной стойкой, и комната отдыха с наборами для фиточая; санузел;
           терраса.
-          Вам предложат различные виды специально заготовленных веников на любой вкус: березовых, дубовых, рябиновых, с
-          можжевельником. Рядом с банькой расположена большая кадка-купель (Фурако) с барной стойкой, где даже в сильный
+          Вам предложат различные виды специально заготовленных веников на любой вкус: березовых, дубовых, рябиновых,
+          с
+          можжевельником. Рядом с банькой расположена большая кадка-купель (Фурако) с барной стойкой, где даже в
+          сильный
           мороз котел нагревает две тонны воды за несколько часов.
         </p></div>
       <div class="container">
@@ -141,8 +152,7 @@
         </p></div>
     </div>
   </div>
-  </div>
-</section>
+  </section>
 <div id="open__tel__modal" class="form">
   <a class="close" href="#close" title="Закрыть">X</a>
   <fieldset class="form__tel shared__form">

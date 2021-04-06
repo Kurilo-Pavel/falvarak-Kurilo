@@ -11,7 +11,7 @@
   margin: 1vw;
   background: white;
   list-style-type: none;
-  }
+}
 
 .center__image {
   height: 20vw;
@@ -24,8 +24,8 @@
 }
 
 .hover_display {
-  position: fixed;
   z-index: 3;
+  position: fixed;
   width: 100%;
   height: 100%;
   display: none;
@@ -39,13 +39,8 @@
   display: inline-block;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
   object-fit: cover;
-  }
+}
 
 .double__block {
   z-index: 4;
@@ -63,48 +58,40 @@
   text-align: center;
   background: #FFFBCC;
 }
-.double__image{
+
+.double__image {
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
   overflow: hidden;
-
 }
 
-.double__button--close {
-  position: fixed;
-  z-index: 5;
-  right: 8vw;
-  top: 8vh;
-  width: 4vw;
-  height: 4vw;
-  border-radius: 50%;
-  line-height: 4vw;
-}
-
-.double__button--left-right{
+.double__button {
   position: relative;
   margin: 2%;
   padding-inline: 1rem;
   border-radius: 0.5rem;
-  }
-.double__button{
   display: inline-block;
   border: 1px solid black;
   background: #CCCCCC;
+  font-size: 25px;
   font-weight: bold;
+  text-transform: uppercase;
 }
-.double__button:hover{
+
+.double__button:hover {
   background: #999999;
   cursor: pointer;
 }
+
 @media (max-width: 600px) {
 
-  .double__block{
+  .double__block {
     height: 60%;
+    width: 100vw;
+  }
+
+  .center__image {
+    width: 50vw;
+    height: 35vw;
   }
 }

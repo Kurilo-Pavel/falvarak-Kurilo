@@ -24,11 +24,17 @@
 
 }
 .section__center_p{
+  padding: 0.5rem;
   font-size: 1rem;
+}
+.section__center_p:first-letter{
+  font-size: 2rem;
+  color: red;
 }
 
 .section__center {
   z-index: 1;
+  min-height: 370px;
 }
 
 .container_pointer {
@@ -85,13 +91,13 @@
 }
 
 #section_container {
-  height: 390px;
+  height: 450px;
 
 }
 
 .container {
   position: relative;
-  height: 390px;
+  height: 450px;
   overflow: hidden;
 }
 
@@ -132,11 +138,14 @@
 
   .section__center_p {
     position: absolute;
-    display: flex;
+    font-size: 3.2vw;
     align-items: center;
     justify-content: center;
     transform: scale(0);
     transition: transform 0.5s ease-out;
+  }
+  .section__center_p:first-letter{
+    font-size: 4vw;
   }
 
   #container_text:checked ~ .container>.section__center_p {

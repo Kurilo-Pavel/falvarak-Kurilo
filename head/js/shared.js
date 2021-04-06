@@ -72,6 +72,7 @@ $(".commit__button").click(function () {
   $(".commit__square").prepend('<span>' + '&#9996;' + ($(".commit__name").val()) + '</span>' + "<br>" + '<p>' + ($("#message").val()) + '</p>' + "<br>");
 });
 
+
 //about_us slaider
 const container = document.getElementById('section_container')
 const leftCont = document.getElementById('left_container')
@@ -87,7 +88,7 @@ function changeContainer() {
   } else if (idx < 0) {
     idx = cont.length - 1
   }
-  container.style.transform = `translateY(${-idx * 390}px)`
+  container.style.transform = `translateY(${-idx * 450}px)`
 
 }
 
